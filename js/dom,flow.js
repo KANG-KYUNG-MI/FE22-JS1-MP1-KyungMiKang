@@ -1,13 +1,15 @@
-// coding with HSL
 const h1 = document.querySelector('h1');
 h1.remove();
 
+// DOM:en and for-loops with HSL
 
+// to create ol and link it to body
 const olElement = document.createElement('ol');
 document.body.appendChild(olElement);
 
-//for-loops
 for (let i = 0; i < 5; i++) {
+
+    //to create li and link it to ol
     const liElement = document.createElement('li');
     liElement.innerText = 'Rad' + (i + 1);
     olElement.appendChild(liElement);
@@ -36,31 +38,34 @@ for (let i = 0; i < liList.length; i++) {
 
 }
 
-
-// Dom:en - to create main and  add it to body
+// DOM:en and for& if-else
+// to create main and link it to body
 const main = document.createElement('main');
 document.body.appendChild(main);
 
-// Dom:en - to decotate main 
+// Dom:en - to decorate main 
 main.style.display = 'flex';
 main.style.justifyContent = 'space-evenly';
 main.style.border = '1px solid black';
 main.style.padding = '30px';
 
 
-//uppgift1- if-else 
-//to create html-elemnt - article
+//uppgift1
+//to create article1 and link it to main
 const article1 = document.createElement('article');
 main.appendChild(article1);
+
+//border for article1
 article1.style.border = '10px solid violet';
 
+//for-loops
 for (let i = 0; i < 10; i++) {
     //to create html-elemnt - h1
     const el = document.createElement('h1');
     article1.appendChild(el);
     el.innerText = [i];
 
-    //if-loops
+    //if- statements
     if (i === 4) {
         el.style.backgroundColor = "darkviolet";
         el.style.color = "white";
@@ -85,10 +90,12 @@ for (let i = 0; i < 10; i++) {
 }
 
 
-//uppgift2- if else
-//to create html-elemnt - article
+//uppgift2
+//to create article2 and link it to main
 const article2 = document.createElement('article');
 main.appendChild(article2);
+
+//border for article2
 article2.style.border = '10px solid violet';
 
 //for-loops
@@ -98,7 +105,7 @@ for (let i = 9; i > -1; i--) {
     article2.appendChild(el);
     el.innerText = [i];
 
-    // if-loops
+    // if-statements
     if (i === 8) {
         el.style.backgroundColor = "darkviolet";
         el.style.color = "white";
@@ -128,7 +135,7 @@ for (let i = 9; i > -1; i--) {
 // arrays
 const number = ['ett', 'två', 'tre', 'fyra', 'fem', 'sex', 'sju', 'åtta', 'nio', 'tio']
 
-//to create html-elemnt - article
+//to create article
 const article3 = document.createElement('article')
 main.appendChild(article3);
 article3.style.border = '10px solid violet';
