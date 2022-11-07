@@ -14,6 +14,7 @@ for (let i = 0; i < 5; i++) {
     liElement.innerText = 'Rad' + (i + 1);
     olElement.appendChild(liElement);
 
+    //styling li
     liElement.style.border = `${2 * i + 5}px solid white`;
     liElement.style.padding = `${2 * i + 5}px`;
     liElement.style.height = `${10 * i + 20}px`;
@@ -82,7 +83,7 @@ for (let i = 0; i < 10; i++) {
 
     }
 
-    // styling
+    // styling of h1
     el.style.margin = '0';
     el.style.textAlign = 'left';
     el.style.width = " 200px"
@@ -122,7 +123,7 @@ for (let i = 9; i > -1; i--) {
 
     }
 
-    //styling 
+    //styling of h1
     el.style.margin = '0';
     el.style.textAlign = 'center';
     el.style.width = '200px';
@@ -131,7 +132,6 @@ for (let i = 9; i > -1; i--) {
 
 
 //upppgift3 arrays & if else
-
 // arrays
 const number = ['ett', 'två', 'tre', 'fyra', 'fem', 'sex', 'sju', 'åtta', 'nio', 'tio']
 
@@ -162,7 +162,7 @@ for (let i = 0; i < number.length; i++) {
         el.style.backgroundColor = "grey";
         el.style.color = 'white';
     }
-    // styling
+    // styling of h1
     el.style.margin = '0'
     el.style.textAlign = 'right';
     el.style.width = '200px';
